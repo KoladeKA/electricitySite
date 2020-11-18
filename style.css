@@ -1,0 +1,544 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    src: url("assets/fonts/AsapCondensed-Bold.ttf");
+    font-family: a-bold;
+}
+@font-face{
+    src: url("assets/fonts/AsapCondensed-Medium.ttf");
+    font-family: a-medium;
+}
+@font-face{
+    src: url("assets/fonts/AsapCondensed-SemiBold.ttf");
+    font-family: a-semibold;
+}
+@font-face{
+    src: url("assets/fonts/AsapCondensed-Regular.ttf");
+    font-family: a-regular;
+}
+
+.b-btn-outline{
+    background-color: transparent;
+    color: rgb(166, 166, 247) !important;
+    border: 2px solid rgb(166, 166, 247);
+    border-radius: 5px;
+    font-family: a-semibold;
+    /* letter-spacing: 0.5px; */
+    /* cursor: pointer; */
+}
+
+.b-btn-outline:hover{
+    background-color:rgb(166, 166, 247);
+    color:rgb(22, 22, 48) !important;
+    border: 2px solid rgb(166, 166, 247);
+}
+
+.b-btn{
+    background-color: rgb(166, 166, 247) !important;
+    color: rgb(22, 22, 48) !important;
+    border: 2px solid rgb(166, 166, 247);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: a-semibold !important;
+}
+
+.b-btn:hover{
+    background-color:transparent !important;
+    color: rgb(166, 166, 247) !important;
+    border: 2px solid rgb(166, 166, 247);
+}
+
+.btn-block{
+    width: 80% !important;
+    border: 2px solid rgb(142, 142, 240);
+    background-color: rgb(142, 142, 240);
+    color: #fff;
+    border-radius: 30px;
+    font-family: a-semibold;
+}
+
+.btn-block:hover, .btn-block:focus{
+    background-color: #fff;
+    color: rgb(142, 142, 240);
+}
+
+label{
+    font-family: a-medium;
+}
+::placeholder{
+    font-family: a-regular;
+}
+
+.nav-link{
+    font-family: a-semibold;
+}
+
+.nav-link:hover, .nav-link:focus{
+    border-bottom: 2px solid rgb(166, 166, 247) !important;
+    color: rgb(166, 166, 247) !important;
+}
+
+.wave{
+    position: relative;
+    min-height: 70vh;
+    width: 100;
+    background-color: #eee;
+    z-index: -2;
+}
+
+.wave::before{
+    content: "";
+    /* display: block; */
+    position: absolute;
+    border-radius: 0% 0% 0% 75%;
+    width: 65%;
+    height: 50vh;
+    background-color: rgb(166, 166, 247);
+    right: 0;
+    top: 0;
+    z-index: -2;
+}
+
+.wave h1{
+    font-size: 50px;
+    font-family: a-bold;
+    letter-spacing: 2px;
+}
+
+.wave p{
+    font-family:a-medium;
+}
+
+/* .wave::after{
+    content: "";
+    /* display: block; *
+    position: absolute;
+    /* border-radius: 10% 50% 50% 50%;
+    width: 20%;
+    height:50vh;
+    background-color: #eee; *
+    left: 35%;
+    bottom: 0;
+    z-index: -1;
+} */
+
+.header h2{
+    position: relative;
+    font-family: a-semibold;
+}
+.header h2::after{
+    position: absolute;
+    content: "";
+    width: 10%;
+    /* height: 200px; */
+    border-bottom: 2px solid rgb(166, 166, 247);
+    left: 45%;
+    bottom:-40%;
+}
+
+.key-values i{
+    padding: 5%;
+    border-radius: 50%;
+    background-color: rgb(166, 166, 247);
+    font-size: xx-large;
+}
+
+.key-values h4{
+    font-family: a-medium;
+}
+
+.key-values p{
+    line-height: 175%;
+    font-family: a-regular;
+}
+
+.about h5, .contact-us h5{
+    font-family: a-medium;
+}
+
+.about i, .contact-us i{
+    color: rgb(166, 166, 247);
+}
+
+.about p, .contact-us p{
+    line-height: 175%;
+    font-family: a-regular;
+}
+
+.contact-us form ::placeholder, .contact-us form input{
+    font-family: a-regular;
+}
+
+
+.footer-area{
+    background:linear-gradient(rgba(10, 10, 85, 0.8), rgba(0, 0, 0, .8)), url("assets/pexels-negative-space-34577.jpg");
+    /* background:linear-gradient(rgba(34, 34, 172, 0.6), rgba(34, 34, 172, .6)), url("assets/pexels-negative-space-34577.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 50vh;
+    color: #fafafa;
+}
+
+.footer-area h1{
+    font-family: a-semibold;
+    color: rgb(166, 166, 247);
+}
+.footer-area p{
+    line-height: 175%;
+    font-family: a-regular;
+}
+
+.footer-area a{
+    line-height: 175%;
+    font-family: a-regular;
+    cursor: pointer;
+    color: #fafafa;
+}
+.footer-area a:hover{
+    text-decoration: none;
+    color: rgb(166, 166, 247) !important;
+}
+
+.footer-area .socials i{
+    font-size: 40px;
+}
+
+.copyright{
+    background-color: rgb(166, 166, 247);
+    color:rgb(22, 22, 48);
+    font-family: a-semibold;
+}
+
+/* payment area................................. */
+
+.paybill-area{
+    background-color: #eee;
+}
+
+.paybill-area .card-box{
+    background: url('assets/pexels-anna-shvets-4482896.jpg');
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.paybill-area #returning h1{
+    font-family: a-medium;
+    padding: 50px 0px;
+}
+.paybill-area #returning p{
+    font-family: a-regular;
+}
+
+.card-box{
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 2% 0%;
+    box-shadow: 10px 10px 20px #aaa;
+}
+
+.form-box{
+ width: 50%;
+ padding: 5% 3%;
+}
+
+.payment-details-area h2{
+    color: rgb(142, 142, 240);
+    font-family: a-semibold;
+}
+
+.payment-details-area .card-box{
+    display: flex;
+    position: relative;
+    padding: 2% 4%;
+}
+
+.payment-details-area .left-card{
+    background-color: rgb(166, 166, 247);
+    /* position: absolute; */
+    /* width: 10%; */
+    /* min-height: 110%; */
+    border-radius:5px ;
+    /* top: -5%;
+    left: 5%; */
+    padding:  10px;
+}
+
+.payment-details-area .left-card li{
+    list-style: none;
+    margin: 80% 0%;
+}
+
+.modal-bg{
+    background-color: rgba(0, 0, 0, .6) !important;
+}
+
+.modal-title{
+    color:rgb(142, 142, 240);
+    font-family: a-medium;
+}
+
+.h-success{
+    color: seagreen;
+}
+.successfull-modal .modal-bg .modal-body i{
+    font-size: xx-large;
+    color: seagreen;
+    border: 3px solid seagreen;
+    padding: 5%;
+    border-radius: 50%;
+}
+
+.h-failed{
+    color: firebrick;
+}
+.failed-modal .modal-bg .modal-body i{
+    font-size: xx-large;
+    color: firebrick;
+    border: 3px solid firebrick;
+    padding: 5% 6%;
+    border-radius: 50%;
+
+}
+/* payment area ends here................................. */
+
+
+
+
+.paybill-area a {
+  text-decoration:none;
+  color:rgb(142, 142, 240);
+  transition:.5s ease;
+  
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  /* display: flex; */
+  /* &:after {
+    content: "";
+    display: table;
+    clear: both; */
+  }
+
+  .paybill-area li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:gray;
+    color:white;
+    /* font-size:20px; */
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    border-radius: 30;
+    font-family: a-medium;
+    
+  }
+  .paybill-area .active a {
+    background:rgb(142, 142, 240);
+    color:white;
+  }
+
+.tab-content > div:last-child {
+  display:none;
+}
+
+/* label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:rgba($white,.5);
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:22px;
+  .req {
+  	margin:2px;
+  	color:$main;
+  }
+} */
+
+/* label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+
+label.highlight {
+	color:$white;
+}
+
+
+/* .paybill-area .button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:rgb(166, 166, 247);
+  color:white;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+}
+
+.paybill-area .button-block {
+  display:block;
+  width:100%;
+} */
+
+/* login / reg area............................................................. */
+.login-reg-area{
+    background: linear-gradient( rgba(142, 142, 240, 0.8),rgba(0, 0, 0, 0.6) ), url("assets//pexels-negative-space-34577.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.login-reg-area .intro{
+    color: #fff;
+    padding: 15% 5%;
+}
+
+.login-reg-area .intro .fa{
+    font-size: xx-large;
+}
+
+.login-reg-area .intro h1{
+    font-size: xx-large;
+    font-family: a-bold;
+}
+
+.login-reg-area .intro p{
+    font-family: a-regular;
+}
+
+.login-reg-area .box {
+    background: #eee;
+    border-radius:50px 0px 0px 50px ;
+    padding: 10%;
+}
+
+.login-reg-area .box .login-reg-btn{
+    background-color: rgb(142, 142, 240);
+    border: 2px solid rgb(142, 142, 240);
+    border-radius: 30px;
+}
+
+.login-reg-area .box .login-reg-btn a{
+    background-color:rgb(142, 142, 240);
+    color: #fff;
+    border-radius: 30px;
+    width: 50%;
+    transition: 0.5s ease-in-out;
+    font-family:a-medium ;
+}
+
+.login-reg-area .box .login-reg-btn a:hover, .login-reg-area .box .login-reg-btn .active{
+    background-color: #fff;
+    color: rgb(142, 142, 240);
+    text-decoration: none;
+}
+
+.login-reg-area .box h4{
+    font-family: a-medium !important;
+}
+
+.login-reg-area .box #login a{
+    color: rgb(142, 142, 240);
+    font-family: a-medium !important;
+}
+
+
+
+.box > div> div:last-child {
+    display:none;
+  }
+
+
+/* login / reg area ends here............................................................. */
+
+/* responsiveness...................................... */
+@media screen and (max-width:600px) {
+    /* .paybill-area{
+        background-color: #eee;
+    } */
+    
+    .paybill-area .card-box{
+        background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/pexels-anna-shvets-4482896.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: left; */
+    }
+    
+    /* .paybill-area #returning h1{
+        font-family: a-medium;
+        padding: 50px 0px;
+    } */
+    /* .paybill-area #returning p{
+        font-family: a-regular;
+    } */
+    
+    .card-box{
+        background-color: #fff;
+        border-radius: 25px;
+        padding: 2% 0%;
+        box-shadow: 10px 10px 20px #aaa;
+    }
+    
+    .form-box{
+     width: 100%;
+    }
+    
+    /* .payment-details-area h2{
+        color: rgb(142, 142, 240);
+        font-family: a-semibold;
+    } */
+    
+    .payment-details-area .card-box{
+        /* display: flex; */
+        display: block;
+        /* position: relative;
+        padding: 2% 4%; */
+    }
+    
+    .payment-details-area .left-card{
+        /* background-color: rgb(166, 166, 247); */
+        /* position: absolute; */
+        /* width: 10%; */
+        /* min-height: 110%; */
+        /* border-radius:5px ; */
+        /* top: -5%;
+        left: 5%; */
+        padding:  10px;
+        margin: 10% 0%;
+    }
+    
+    .payment-details-area .left-card li{
+
+        list-style: none;
+        display: inline;
+        /* margin: 80% 0%; */
+    }
+
+    .payment-details-area .left-card li a img{
+
+        width: 32%;
+    }
+}
+/* responsiveness ends here...................................... */

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login/Register page</title>
+    
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="vendors/bootstrap-4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="vendors/fontawesome-free-5.11.2-web/css/all.min.css">
+</head>
+<body>
+
+    <section class="login-reg-area py-5 ">
+        <div class="col-md-10 col-lg-9 mx-auto py-5">
+            <div class="row">
+                <div class="col-md-4 text-center intro">
+                    <span><i class="fa fa-credit-card py-2"></i></span>
+                    <h1 class="py-2">Welcome</h1>
+                    <p class="py-2">You are 30 seconds away from making your Electricity Bill Payment</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="box py-5">
+                        <div class="text-center login-reg-btn p-1 d-flex">
+                            <a href="#login" class="py-2 px-3 active">Login</a>
+                            <a href="#register" class="py-2 px-3">Register</a>
+                        </div>
+
+                        <div class="py-3">
+                            <div id="login">
+                                <h4 class=" py-3 text-center"> Login to your account</h4>
+                                <form action="" method="post">
+                                    <input type="email" name="" id="" placeholder="Email" class="form-control my-3">
+                                    <input type="password" name="" id="" placeholder="password" class="form-control my-3">
+                                    <a href="">Forgot password?</a> <br>
+                                    <button class="btn-block mt-3 mx-auto py-2">Login</button>
+                                </form>
+                            </div>
+                            
+                            <div id="register">
+                                <h4 class="col-11 col-md-8 mx-auto py-3 text-center"> SignUp to have access to all our payment plans</h4>
+                                <form action="" method="post">
+                                    <input type="text" name="" id="" placeholder="firstname" class="form-control my-3">
+                                    <input type="text" name="" id="" placeholder="Lastname" class="form-control my-3">
+                                    <input type="tel" name="" id="" placeholder="Phone-Number" class="form-control my-3">
+                                    <input type="email" name="" id="" placeholder="Email" class="form-control my-3">
+                                    <input type="text" name="" id="" placeholder="password" class="form-control my-3">
+                                    <input type="text" name="" id="" placeholder="confirm password" class="form-control my-3">
+                                    <button class="btn-block mt-3 mx-auto py-2 px-5">Register</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="vendors/jquery-3.3.1.min.js"></script>
+    <script src="vendors/bootstrap-4.5.0/js/bootstrap.min.js"></script>
+
+    
+    <script>
+
+        $('.login-reg-btn a').on('click', function (e) {
+        
+        e.preventDefault();
+        
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        
+        target = $(this).attr('href');
+
+        $('.box > div > div').not(target).hide();
+        
+        $(target).fadeIn(600);
+        
+        });
+
+    </script>
+
+</body>
+</html>
